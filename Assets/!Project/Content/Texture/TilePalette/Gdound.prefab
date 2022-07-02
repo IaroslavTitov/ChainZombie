@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 2491690866038285055}
   - component: {fileID: 7333116053208837747}
   m_Layer: 0
-  m_Name: Gdound Tiles
+  m_Name: Gdound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
