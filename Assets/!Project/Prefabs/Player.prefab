@@ -163,4 +163,3 @@ MonoBehaviour:
   maxSpeed: 5
   minSpeed: 0.1
   friction: 25
-  lastDirection: {x: 0, y: 0}
