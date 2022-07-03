@@ -2144,7 +2144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_96
+      name: Top_Atack_Characterl_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2165,7 +2165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_97
+      name: Top_Atack_Characterl_2
       rect:
         serializedVersion: 2
         x: 64
@@ -2186,7 +2186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_98
+      name: Top_Atack_Characterl_3
       rect:
         serializedVersion: 2
         x: 128
@@ -2207,7 +2207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_99
+      name: Top_Atack_Characterl_4
       rect:
         serializedVersion: 2
         x: 192
@@ -2228,7 +2228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_100
+      name: Top_Atack_Characterl_5
       rect:
         serializedVersion: 2
         x: 256
@@ -2249,7 +2249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_101
+      name: Top_Atack_Characterl_6
       rect:
         serializedVersion: 2
         x: 320
@@ -2270,7 +2270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_102
+      name: Left_Atack_Characterl_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2291,7 +2291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_103
+      name: Left_Atack_Characterl_2
       rect:
         serializedVersion: 2
         x: 64
@@ -2312,7 +2312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_104
+      name: Left_Atack_Characterl_3
       rect:
         serializedVersion: 2
         x: 128
@@ -2333,7 +2333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_105
+      name: Left_Atack_Characterl_4
       rect:
         serializedVersion: 2
         x: 192
@@ -2354,7 +2354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_106
+      name: Left_Atack_Characterl_5
       rect:
         serializedVersion: 2
         x: 256
@@ -2375,7 +2375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_107
+      name: Left_Atack_Characterl_6
       rect:
         serializedVersion: 2
         x: 320
@@ -2396,7 +2396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_108
+      name: Down_Atack_Characterl_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2417,7 +2417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_109
+      name: Down_Atack_Characterl_2
       rect:
         serializedVersion: 2
         x: 64
@@ -2438,7 +2438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_110
+      name: Down_Atack_Characterl_3
       rect:
         serializedVersion: 2
         x: 128
@@ -2459,7 +2459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_111
+      name: Down_Atack_Characterl_4
       rect:
         serializedVersion: 2
         x: 192
@@ -2480,7 +2480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_112
+      name: Down_Atack_Characterl_5
       rect:
         serializedVersion: 2
         x: 256
@@ -2501,7 +2501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_113
+      name: Down_Atack_Characterl_6
       rect:
         serializedVersion: 2
         x: 320
@@ -2522,7 +2522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_114
+      name: Right_Atack_Characterl_1
       rect:
         serializedVersion: 2
         x: 0
@@ -2543,7 +2543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_115
+      name: Right_Atack_Characterl_2
       rect:
         serializedVersion: 2
         x: 64
@@ -2564,7 +2564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_116
+      name: Right_Atack_Characterl_3
       rect:
         serializedVersion: 2
         x: 128
@@ -2585,7 +2585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_117
+      name: Right_Atack_Characterl_4
       rect:
         serializedVersion: 2
         x: 192
@@ -2606,7 +2606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_118
+      name: Right_Atack_Characterl_5
       rect:
         serializedVersion: 2
         x: 256
@@ -2627,7 +2627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characterl_119
+      name: Right_Atack_Characterl_6
       rect:
         serializedVersion: 2
         x: 320
@@ -3879,7 +3879,6 @@ TextureImporter:
       UP_Walk_Characterl_5: 1751384712
       Left_Walk_Characterl_6: 1391631940
       Characterl_14: 609874978
-      Characterl_96: -1266591437
       Characterl_5: -1187586658
       Characterl_134: -2038544131
       Characterl_30: -799343607
@@ -3900,9 +3899,11 @@ TextureImporter:
       Characterl_35: 1657242448
       Characterl_0: -1349497121
       Characterl_22: 578172816
+      Right_Atack_Characterl_2: -422886634
       Characterl_163: 1031114045
       Characterl_138: -566490797
       Characterl_158: -1707510540
+      Down_Atack_Characterl_6: -1681239354
       Characterl_130: -1313753028
       Characterl_152: -1876681439
       Characterl_146: -1377134516
@@ -3910,6 +3911,7 @@ TextureImporter:
       UP_Walk_Characterl_1: 163354723
       Characterl_38: 1322819681
       Characterl_124: -1805546294
+      Top_Atack_Characterl_4: -2030913714
       Characterl_145: -677622145
       Right_Walk_Characterl_3: -103836772
       Characterl_26: -1889283022
@@ -3919,25 +3921,26 @@ TextureImporter:
       Characterl_45: -187692412
       Characterl_166: 1934530224
       Left_Walk_Characterl_1: -1583177314
+      Right_Atack_Characterl_4: -549806496
       Characterl_23: -1508195839
       Right_Walk_Characterl_2: -1760596927
       Characterl_28: 557029589
+      Right_Atack_Characterl_5: 2097767999
       Characterl_171: -2009869765
       Characterl_120: 192024057
       Left_Walk_Characterl_5: 901838910
       Down_Walk_Characterl_6: 1020805226
       Characterl_4: 1083644224
+      Right_Atack_Characterl_6: 380843780
       Characterl_56: -490194063
       Characterl_54: 1745025927
-      Characterl_112: 603653204
       Characterl_165: 1719176206
       Characterl_51: 1483809044
-      Characterl_114: -736444406
+      Down_Atack_Characterl_2: -224406685
       Left_Walk_Characterl_3: 1254220381
       Characterl_147: 1145669968
       Characterl_133: 517760254
       Characterl_157: -189066511
-      Characterl_106: -216651251
       Characterl_153: -1358185147
       Characterl_48: 1504988249
       Characterl_41: 991028696
@@ -3949,22 +3952,20 @@ TextureImporter:
       Characterl_155: -105817729
       Characterl_17: 1743593385
       Characterl_27: 477661429
-      Characterl_109: -224406685
       Characterl_129: -1558990779
+      Left_Atack_Characterl_2: 104902649
       Characterl_121: -426870483
       Down_Death_Characterl_3: -1838345493
       Characterl_58: -1481835389
       Down_Death_Characterl_6: -1899910430
+      Down_Atack_Characterl_5: 603653204
       Characterl_19: 370783366
       Characterl_154: -1452790371
       Characterl_168: -1175839431
-      Characterl_111: -29478759
       Characterl_160: 611016635
       Characterl_46: -1290497006
       Down_Walk_Characterl_7: -281445259
       Characterl_16: 1128690235
-      Characterl_100: 1533502263
-      Characterl_116: -635545164
       Down_Walk_Characterl_2: 1301918275
       Down_Walk_Characterl_1: -1209228525
       Characterl_122: 1005547615
@@ -3973,42 +3974,40 @@ TextureImporter:
       Characterl_20: -1138420485
       Down_Death_Characterl_1: -1923694708
       Characterl_10: -418134773
-      Characterl_118: 2097767999
+      Down_Death_Characterl_4: 1763411971
       Characterl_59: 1626573284
       Characterl_139: -910927582
       Characterl_57: -117801879
-      Down_Death_Characterl_4: 1763411971
       Characterl_127: -1490223187
-      Characterl_105: 1585552125
       Down_Death_Characterl_5: -1220371870
       Down_Walk_Characterl_8: 1332016077
+      Left_Atack_Characterl_5: -216651251
       Characterl_136: -5558732
       Characterl_125: -1894658836
       Characterl_148: 1606581428
       Characterl_131: 432869245
       UP_Walk_Characterl_6: 850764828
       Characterl_135: 259805484
+      Top_Atack_Characterl_5: 1533502263
       Characterl_12: 1819688549
-      Characterl_119: 380843780
+      Top_Atack_Characterl_2: -1485060692
       Characterl_8: -201466378
+      Top_Atack_Characterl_3: 1433578454
+      Down_Atack_Characterl_3: -1178250859
       Characterl_6: -1461368739
       Characterl_15: -317493060
-      Characterl_107: 204010833
       Characterl_159: -1987010438
+      Left_Atack_Characterl_3: 1227344913
       Characterl_40: -2047871600
+      Down_Atack_Characterl_1: 222230444
       UP_Walk_Characterl_9: -1209829016
-      Characterl_108: 222230444
       Characterl_142: 1996809588
-      Characterl_104: 1227344913
       Characterl_18: -1071678046
       Down_Walk_Characterl_5: -1921090647
       UP_Walk_Characterl_4: 141225015
       Characterl_149: 1955063198
       Characterl_43: -1092223453
-      Characterl_97: -1485060692
       Characterl_13: 1964257367
-      Characterl_102: 895851561
-      Characterl_98: 1433578454
       Characterl_44: 923949688
       Down_Walk_Characterl_3: -2147428350
       Characterl_126: 1121721598
@@ -4022,36 +4021,37 @@ TextureImporter:
       Characterl_140: -7472840
       Characterl_25: -928412765
       Characterl_55: 1316999300
-      Characterl_99: -2030913714
-      Characterl_101: -1948351851
-      Characterl_115: -422886634
       Characterl_150: 1759059011
       Right_Walk_Characterl_8: -278689768
+      Top_Atack_Characterl_1: -1266591437
       Characterl_7: -1554575284
-      Characterl_110: -1178250859
-      Left_Walk_Characterl_7: 107853763
       Characterl_170: -905156661
+      Left_Walk_Characterl_7: 107853763
+      Top_Atack_Characterl_6: -1948351851
+      Left_Atack_Characterl_6: 204010833
       Characterl_52: -1513472857
       Characterl_29: 1389137922
       Right_Walk_Characterl_1: -1728937912
       Characterl_143: -454220416
+      Left_Atack_Characterl_4: 1585552125
       Characterl_53: -1663299268
       Down_Walk_Characterl_9: 791918795
       Characterl_164: -1613701982
       Left_Walk_Characterl_4: -368289429
-      Characterl_113: -1681239354
+      Left_Atack_Characterl_1: 895851561
       Characterl_39: -133718799
-      Characterl_103: 104902649
-      Characterl_117: -549806496
+      Characterl_128: -595042989
       Right_Walk_Characterl_7: -461009305
       Right_Walk_Characterl_9: 715100789
       Characterl_161: -412859156
-      Characterl_128: -595042989
       Characterl_2: 1637394239
+      Right_Atack_Characterl_1: -736444406
       Down_Walk_Characterl_4: -1375850375
+      Right_Atack_Characterl_3: -635545164
       Right_Walk_Characterl_5: -1740360958
       Characterl_31: 2144274674
       Characterl_9: -329678001
+      Down_Atack_Characterl_4: -29478759
       Characterl_33: -349966602
       Characterl_47: 1875730524
   spritePackingTag: 
