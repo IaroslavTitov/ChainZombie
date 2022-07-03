@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 50eba52b43070a843aa987bffc26354e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e025133d4de3169489b9fcea66e2deb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -117,13 +117,13 @@ HingeJoint2D:
   m_GameObject: {fileID: 6438752407779627761}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0.16}
-  m_ConnectedAnchor: {x: 0, y: 0.16}
+  m_Anchor: {x: 0, y: 0.43}
+  m_ConnectedAnchor: {x: 0, y: 0.43}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -145,6 +145,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2, y: 0.32}
+  m_Offset: {x: 0, y: 0.06}
+  m_Size: {x: 0.3, y: 0.65}
   m_Direction: 0
