@@ -10,6 +10,8 @@ public class CharacterController : MonoBehaviour
     public float maxSpeed;
     public float minSpeed;
     public float friction;
+    public ParticleSystem hurtParticles;
+
     private Vector2 lastDirection;
     protected Vector2 moveInput = Vector2.zero;
 
@@ -30,16 +32,21 @@ public class CharacterController : MonoBehaviour
 
             if (rigidbody.velocity.magnitude < minSpeed && rigidbody.velocity != Vector2.zero)
             {
-                lastDirection = rigidbody.velocity.normalized;
                 rigidbody.velocity = Vector2.zero;
             }
         }
 
+        if (moveInput != Vector2.zero)
+            lastDirection = moveInput.normalized;
+
         //Set animator vars
-        animator.SetFloat("X", rigidbody.velocity.x);
-        animator.SetFloat("Y", rigidbody.velocity.y);
-        animator.SetFloat("lastX", lastDirection.x);
-        animator.SetFloat("lastY", lastDirection.y);
+        animator.SetFloat("X", lastDirection.x);
+        animator.SetFloat("Y", lastDirection.y);
         animator.SetBool("isMoving", rigidbody.velocity != Vector2.zero);
+    }
+
+    public void Hit()
+    {
+        hurtParticles.Play();
     }
 }
