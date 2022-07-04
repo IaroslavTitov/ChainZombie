@@ -42,7 +42,6 @@ public class ZombieScript : CharacterController
                     maxSpeed = maxFullSpeed * firstSlow;
                     state = ZombieState.SLOW;
                     effectTime = firstEffectTime;
-                    Debug.Log(name + " recovered from STUNNED state, now he's SLOW");
                 }
                 else
                 if (state == ZombieState.SLOW)
@@ -50,7 +49,6 @@ public class ZombieScript : CharacterController
                     maxSpeed = maxFullSpeed;
                     state = ZombieState.NORMAL;
                     effectTime = 0;
-                    Debug.Log(name + " recovered from SLOW state, now he's NORMAL");
                 }
             }
         }
@@ -81,7 +79,6 @@ public class ZombieScript : CharacterController
             rigidbody.AddForce(direction * firstKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * firstSlow;
             state = ZombieState.SLOW;
-            Debug.Log(name + " entered a SLOW state");
         }
         else if (state == ZombieState.SLOW)
         {
@@ -90,7 +87,6 @@ public class ZombieScript : CharacterController
             rigidbody.AddForce(direction * secondKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * secondSlow;
             state = ZombieState.STUNNED;
-            Debug.Log(name + " entered a STUNNED state");
         }
         else if (state == ZombieState.STUNNED)
         {
@@ -99,7 +95,6 @@ public class ZombieScript : CharacterController
             rigidbody.AddForce(direction * secondKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * secondSlow;
             state = ZombieState.STUNNED;
-            Debug.Log(name + " kee[s STUNNED state");
         }
     }
 

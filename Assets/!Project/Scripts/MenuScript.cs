@@ -10,12 +10,20 @@ public class MenuScript : MonoBehaviour
 
     private void Start()
     {
-        SetSoundText();
+        if (soundText != null)
+        {
+            SetSoundText();
+        }
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("Game", LoadSceneMode.Single);
+    }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
     public void ToggleSound()
@@ -27,6 +35,6 @@ public class MenuScript : MonoBehaviour
 
     private void SetSoundText()
     {
-        soundText.text = PlayerPrefs.GetInt("Sound") == 1 ? "♪" : "X";
+        soundText.text = PlayerPrefs.GetInt("Sound") == 1 ? "♪" : "X♪";
     }
 }

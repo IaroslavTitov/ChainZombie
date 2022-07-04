@@ -59,8 +59,8 @@ public class ZombieSpawner : MonoBehaviour
             for (int i = 0; i < chainNumber; i++)
             {
                 int startIndex = -1, endIndex = -1;
-                while (startIndex == endIndex 
-                    || chainDirections.Contains(new Tuple<int, int>(startIndex, endIndex)) 
+                while (startIndex == endIndex
+                    || chainDirections.Contains(new Tuple<int, int>(startIndex, endIndex))
                     || chainDirections.Contains(new Tuple<int, int>(endIndex, startIndex)))
                 {
                     startIndex = Random.Range(0, spawnedZombies.Count);

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : CharacterController
@@ -8,15 +9,43 @@ public class PlayerController : CharacterController
     public GameObject attackConeWrapper;
     public Collider2D attackCone;
 
+    public int maxHP;
+    private int hp;
+    private ScoreSystem scoreSystem;
+
     public float attackCooldown;
     public float attackTimer;
     private float attackCooldownLeft = 0;
     private bool hasAttacked;
+
+    public float knockback;
+
+    private void Start()
+    {
+        scoreSystem = GameObject.FindObjectOfType<ScoreSystem>();
+        scoreSystem.hpText.text = maxHP + " HP";
+        hp = maxHP;
+    }
+
     void Update()
     {
-        GatherInput();
+        if (hp > 0)
+        {
+            GatherInput();
+        }
+        else
+        {
+            moveInput = Vector2.zero;
+        }
 
         ApplyInput();
+
+        if (hp <= 0)
+        {
+            return;
+        }
+
+        animator.SetBool("isMoving", rigidbody.velocity != Vector2.zero);
 
         TurnAttackCone();
 
@@ -81,6 +110,26 @@ public class PlayerController : CharacterController
                     ZombieScript zombie = collider.GetComponent<ZombieScript>();
                     Vector2 direction = (collider.attachedRigidbody.position - rigidbody.position).normalized;
                     zombie.Hit(direction);
+                }
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        {
+            if (hp > 0)
+            {
+                hp--;
+                scoreSystem.hpText.text = hp + " HP";
+                Vector2 direction = (rigidbody.position - collision.rigidbody.position).normalized;
+                rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
+                Hit();
+
+                if (hp <= 0)
+                {
+                    GameObject.FindObjectOfType<ScoreSystem>().GameOver();
                 }
             }
         }

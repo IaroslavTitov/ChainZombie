@@ -42,7 +42,6 @@ public class CharacterController : MonoBehaviour
         //Set animator vars
         animator.SetFloat("X", lastDirection.x);
         animator.SetFloat("Y", lastDirection.y);
-        animator.SetBool("isMoving", rigidbody.velocity != Vector2.zero);
     }
 
     public void Hit()
