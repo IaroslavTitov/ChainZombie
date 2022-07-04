@@ -4977,11 +4977,13 @@ MonoBehaviour:
   minSpeed: 0.1
   friction: 5
   hurtParticles: {fileID: 6823503045802362542}
+  sightDistance: 10
+  roamRotation: 20
   firstKnockback: 60
-  secondKnockback: 70
   firstStun: 0.5
-  secondStun: 5
   firstEffectTime: 10
-  secondEffectTime: 10
   firstSlow: 0.5
+  secondKnockback: 70
+  secondStun: 5
+  secondEffectTime: 10
   secondSlow: 0.1

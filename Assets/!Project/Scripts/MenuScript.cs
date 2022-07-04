@@ -32,6 +32,11 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     public void ToggleSound()
     {
         PlayerPrefs.SetInt("Sound", PlayerPrefs.GetInt("Sound") == 1? 0 : 1);

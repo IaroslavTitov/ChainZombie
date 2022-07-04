@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class ZombieScript : CharacterController
 {
-    private Rigidbody2D target;
+    [Header("Roam")]
+    public float sightDistance;
+    public float roamRotation;
 
+    [Header("Slow mode")]
     public float firstKnockback;
-    public float secondKnockback;
     public float firstStun;
-    public float secondStun;
     public float firstEffectTime;
-    public float secondEffectTime;
-
     [Range(0, 1)]
     public float firstSlow;
+
+    [Header("Stunned mode")]
+    public float secondKnockback;
+    public float secondStun;
+    public float secondEffectTime;
     [Range(0, 1)]
     public float secondSlow;
 
+    private float maxFullSpeed;
     private float stunTime;
     private float effectTime;
+    private float angle = 0;
     private ZombieState state;
-    private float maxFullSpeed;
+    private Rigidbody2D target;
 
     private void Start()
     {
@@ -63,6 +69,13 @@ public class ZombieScript : CharacterController
             stunTime -= Time.deltaTime;
             moveInput = Vector2.zero;
             animator.SetBool("Stun", true);
+        }
+
+        // Switch to roam
+        if (Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
+        {
+            angle += Random.Range(-1f, 1f) * roamRotation;
+            moveInput = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
         }
 
         ApplyInput();
