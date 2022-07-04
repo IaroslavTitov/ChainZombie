@@ -7,12 +7,18 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public TMP_Text soundText;
+    public TMP_Text highscoreText;
 
     private void Start()
     {
         if (soundText != null)
         {
             SetSoundText();
+        }
+
+        if (highscoreText != null)
+        {
+            highscoreText.text = "Highscore " + PlayerPrefs.GetInt("Highscore").ToString();
         }
     }
 
