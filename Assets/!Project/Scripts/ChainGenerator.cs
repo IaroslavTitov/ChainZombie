@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChainGenerator : MonoBehaviour
 {
+    public static Vector2 characterOffset = Vector2.up * 0.5f;
+
     public static void GenerateChain(GameObject chainlinkPrefab, Rigidbody2D startObject, Rigidbody2D endObject, Vector2 firstConnectorOffset, Vector2 lastConnectorOffset)
     {
         GameObject parentObject = new GameObject();

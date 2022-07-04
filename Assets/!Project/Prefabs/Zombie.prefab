@@ -4982,6 +4982,6 @@ MonoBehaviour:
   firstStun: 0.5
   secondStun: 5
   firstEffectTime: 10
-  secondEffectTime: 5
+  secondEffectTime: 10
   firstSlow: 0.5
-  secondSlow: 0
+  secondSlow: 0.1
