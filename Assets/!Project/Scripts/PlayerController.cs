@@ -19,12 +19,16 @@ public class PlayerController : CharacterController
     private bool hasAttacked;
 
     public float knockback;
+    public GameObject chainlinkPrefab;
+    public Rigidbody2D zombieBuddy;
 
     private void Start()
     {
         scoreSystem = GameObject.FindObjectOfType<ScoreSystem>();
         scoreSystem.hpText.text = maxHP + " HP";
         hp = maxHP;
+
+        ChainGenerator.GenerateChain(chainlinkPrefab, rigidbody, zombieBuddy, Vector2.up * 0.5f, Vector2.up * 0.5f);
     }
 
     void Update()
