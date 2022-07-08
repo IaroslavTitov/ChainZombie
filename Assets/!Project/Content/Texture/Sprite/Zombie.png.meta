@@ -1388,10 +1388,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_1
+      name: UP_Walk_Zombie_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 768
         width: 64
         height: 64
@@ -1409,7 +1409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_2
+      name: UP_Walk_Zombie_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1430,7 +1430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_3
+      name: UP_Walk_Zombie_3
       rect:
         serializedVersion: 2
         x: 128
@@ -1451,7 +1451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_4
+      name: UP_Walk_Zombie_4
       rect:
         serializedVersion: 2
         x: 192
@@ -1472,7 +1472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_5
+      name: UP_Walk_Zombie_5
       rect:
         serializedVersion: 2
         x: 256
@@ -1493,7 +1493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_6
+      name: UP_Walk_Zombie_6
       rect:
         serializedVersion: 2
         x: 320
@@ -1514,7 +1514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_7
+      name: UP_Walk_Zombie_7
       rect:
         serializedVersion: 2
         x: 384
@@ -1535,7 +1535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_8
+      name: UP_Walk_Zombie_8
       rect:
         serializedVersion: 2
         x: 448
@@ -1556,7 +1556,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UP_Walk_Characterl_9
+      name: UP_Walk_Zombie_9
       rect:
         serializedVersion: 2
         x: 513
@@ -1577,7 +1577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_1
+      name: Left_Walk_Zombie_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1598,7 +1598,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_2
+      name: Left_Walk_Zombie_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1619,7 +1619,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_3
+      name: Left_Walk_Zombie_3
       rect:
         serializedVersion: 2
         x: 128
@@ -1640,7 +1640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_4
+      name: Left_Walk_Zombie_4
       rect:
         serializedVersion: 2
         x: 192
@@ -1661,7 +1661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_5
+      name: Left_Walk_Zombie_5
       rect:
         serializedVersion: 2
         x: 256
@@ -1682,7 +1682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_6
+      name: Left_Walk_Zombie_6
       rect:
         serializedVersion: 2
         x: 320
@@ -1703,7 +1703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_7
+      name: Left_Walk_Zombie_7
       rect:
         serializedVersion: 2
         x: 384
@@ -1724,7 +1724,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_8
+      name: Left_Walk_Zombie_8
       rect:
         serializedVersion: 2
         x: 448
@@ -1745,7 +1745,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Left_Walk_Characterl_9
+      name: Left_Walk_Zombie_9
       rect:
         serializedVersion: 2
         x: 512
@@ -1766,7 +1766,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_1
+      name: Down_Walk_Zombie_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1787,7 +1787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_2
+      name: Down_Walk_Zombie_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1808,7 +1808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_3
+      name: Down_Walk_Zombie_3
       rect:
         serializedVersion: 2
         x: 128
@@ -1829,7 +1829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_4
+      name: Down_Walk_Zombie_4
       rect:
         serializedVersion: 2
         x: 192
@@ -1850,7 +1850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_5
+      name: Down_Walk_Zombie_5
       rect:
         serializedVersion: 2
         x: 256
@@ -1871,7 +1871,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_6
+      name: Down_Walk_Zombie_6
       rect:
         serializedVersion: 2
         x: 320
@@ -1892,7 +1892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_7
+      name: Down_Walk_Zombie_7
       rect:
         serializedVersion: 2
         x: 384
@@ -1913,7 +1913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_8
+      name: Down_Walk_Zombie_8
       rect:
         serializedVersion: 2
         x: 448
@@ -1934,7 +1934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Walk_Characterl_9
+      name: Down_Walk_Zombie_9
       rect:
         serializedVersion: 2
         x: 512
@@ -1955,7 +1955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_1
+      name: Right_Walk_Zombie_1
       rect:
         serializedVersion: 2
         x: 0
@@ -1976,7 +1976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_2
+      name: Right_Walk_Zombie_2
       rect:
         serializedVersion: 2
         x: 64
@@ -1997,7 +1997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_3
+      name: Right_Walk_Zombie_3
       rect:
         serializedVersion: 2
         x: 128
@@ -2018,7 +2018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_4
+      name: Right_Walk_Zombie_4
       rect:
         serializedVersion: 2
         x: 192
@@ -2039,7 +2039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_5
+      name: Right_Walk_Zombie_5
       rect:
         serializedVersion: 2
         x: 256
@@ -2060,7 +2060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_6
+      name: Right_Walk_Zombie_6
       rect:
         serializedVersion: 2
         x: 320
@@ -2081,7 +2081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_7
+      name: Right_Walk_Zombie_7
       rect:
         serializedVersion: 2
         x: 384
@@ -2102,7 +2102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_8
+      name: Right_Walk_Zombie_8
       rect:
         serializedVersion: 2
         x: 448
@@ -2123,7 +2123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_Characterl_9
+      name: Right_Walk_Zombie_9
       rect:
         serializedVersion: 2
         x: 512
@@ -3782,7 +3782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down_Death_Characterl_3
+      name: Down_Stunned_Zombie
       rect:
         serializedVersion: 2
         x: 128
@@ -3876,20 +3876,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UP_Walk_Characterl_5: 1751384712
-      Left_Walk_Characterl_6: 1391631940
       Characterl_14: 609874978
       Characterl_5: -1187586658
       Characterl_134: -2038544131
       Characterl_30: -799343607
       Characterl_169: 325217388
-      Left_Walk_Characterl_8: 1127199189
       Characterl_3: 552212438
       Characterl_34: -815954027
       Characterl_49: -1363601098
       Characterl_123: 80200889
-      Left_Walk_Characterl_9: 741241683
-      UP_Walk_Characterl_8: 1492938357
+      Right_Walk_Zombie_8: -278689768
       Characterl_162: -869603338
       Characterl_141: -40640536
       Characterl_37: -377723264
@@ -3899,55 +3895,59 @@ TextureImporter:
       Characterl_35: 1657242448
       Characterl_0: -1349497121
       Characterl_22: 578172816
+      Left_Walk_Zombie_5: 901838910
       Right_Atack_Characterl_2: -422886634
       Characterl_163: 1031114045
       Characterl_138: -566490797
       Characterl_158: -1707510540
       Down_Atack_Characterl_6: -1681239354
       Characterl_130: -1313753028
+      Left_Walk_Zombie_7: 107853763
       Characterl_152: -1876681439
       Characterl_146: -1377134516
-      UP_Walk_Characterl_7: 819173346
-      UP_Walk_Characterl_1: 163354723
+      UP_Walk_Zombie_9: -1209829016
       Characterl_38: 1322819681
-      Characterl_124: -1805546294
       Top_Atack_Characterl_4: -2030913714
-      Characterl_145: -677622145
-      Right_Walk_Characterl_3: -103836772
+      Characterl_124: -1805546294
       Characterl_26: -1889283022
-      Right_Walk_Characterl_6: -1963811717
+      Characterl_145: -677622145
+      Down_Walk_Zombie_6: 1020805226
+      Right_Walk_Zombie_6: -1963811717
+      UP_Walk_Zombie_7: 819173346
+      Down_Walk_Zombie_2: 1301918275
+      Right_Walk_Zombie_4: 1385156210
       Characterl_36: 1354668735
       Characterl_24: -89033637
       Characterl_45: -187692412
       Characterl_166: 1934530224
-      Left_Walk_Characterl_1: -1583177314
+      Down_Walk_Zombie_5: -1921090647
+      Down_Walk_Zombie_1: -1209228525
       Right_Atack_Characterl_4: -549806496
       Characterl_23: -1508195839
-      Right_Walk_Characterl_2: -1760596927
+      Left_Walk_Zombie_3: 1254220381
       Characterl_28: 557029589
       Right_Atack_Characterl_5: 2097767999
       Characterl_171: -2009869765
       Characterl_120: 192024057
-      Left_Walk_Characterl_5: 901838910
-      Down_Walk_Characterl_6: 1020805226
       Characterl_4: 1083644224
       Right_Atack_Characterl_6: 380843780
       Characterl_56: -490194063
+      Down_Walk_Zombie_8: 1332016077
       Characterl_54: 1745025927
       Characterl_165: 1719176206
       Characterl_51: 1483809044
       Down_Atack_Characterl_2: -224406685
-      Left_Walk_Characterl_3: 1254220381
       Characterl_147: 1145669968
       Characterl_133: 517760254
+      UP_Walk_Zombie_8: 1492938357
       Characterl_157: -189066511
       Characterl_153: -1358185147
       Characterl_48: 1504988249
       Characterl_41: 991028696
       Characterl_50: -63848404
       Characterl_156: -1968893711
-      UP_Walk_Characterl_3: 2130493987
       Characterl_1: 161722623
+      Right_Walk_Zombie_9: 715100789
       Characterl_21: -585496479
       Characterl_155: -105817729
       Characterl_17: 1743593385
@@ -3955,7 +3955,7 @@ TextureImporter:
       Characterl_129: -1558990779
       Left_Atack_Characterl_2: 104902649
       Characterl_121: -426870483
-      Down_Death_Characterl_3: -1838345493
+      Right_Walk_Zombie_1: -1728937912
       Characterl_58: -1481835389
       Down_Death_Characterl_6: -1899910430
       Down_Atack_Characterl_5: 603653204
@@ -3964,13 +3964,12 @@ TextureImporter:
       Characterl_168: -1175839431
       Characterl_160: 611016635
       Characterl_46: -1290497006
-      Down_Walk_Characterl_7: -281445259
       Characterl_16: 1128690235
-      Down_Walk_Characterl_2: 1301918275
-      Down_Walk_Characterl_1: -1209228525
+      Down_Stunned_Zombie: -1838345493
+      Down_Walk_Zombie_9: 791918795
+      UP_Walk_Zombie_4: 141225015
       Characterl_122: 1005547615
       Down_Death_Characterl_2: 1749669051
-      Left_Walk_Characterl_2: -409263881
       Characterl_20: -1138420485
       Down_Death_Characterl_1: -1923694708
       Characterl_10: -418134773
@@ -3979,16 +3978,18 @@ TextureImporter:
       Characterl_139: -910927582
       Characterl_57: -117801879
       Characterl_127: -1490223187
+      UP_Walk_Zombie_3: 2130493987
+      Left_Walk_Zombie_1: -1583177314
       Down_Death_Characterl_5: -1220371870
-      Down_Walk_Characterl_8: 1332016077
+      UP_Walk_Zombie_2: -1138802622
       Left_Atack_Characterl_5: -216651251
+      Right_Walk_Zombie_5: -1740360958
       Characterl_136: -5558732
       Characterl_125: -1894658836
       Characterl_148: 1606581428
       Characterl_131: 432869245
-      UP_Walk_Characterl_6: 850764828
-      Characterl_135: 259805484
       Top_Atack_Characterl_5: 1533502263
+      Characterl_135: 259805484
       Characterl_12: 1819688549
       Top_Atack_Characterl_2: -1485060692
       Characterl_8: -201466378
@@ -3997,59 +3998,58 @@ TextureImporter:
       Characterl_6: -1461368739
       Characterl_15: -317493060
       Characterl_159: -1987010438
+      Right_Walk_Zombie_2: -1760596927
+      UP_Walk_Zombie_6: 850764828
       Left_Atack_Characterl_3: 1227344913
       Characterl_40: -2047871600
       Down_Atack_Characterl_1: 222230444
-      UP_Walk_Characterl_9: -1209829016
       Characterl_142: 1996809588
       Characterl_18: -1071678046
-      Down_Walk_Characterl_5: -1921090647
-      UP_Walk_Characterl_4: 141225015
+      Down_Walk_Zombie_3: -2147428350
       Characterl_149: 1955063198
       Characterl_43: -1092223453
       Characterl_13: 1964257367
+      Left_Walk_Zombie_8: 1127199189
       Characterl_44: 923949688
-      Down_Walk_Characterl_3: -2147428350
       Characterl_126: 1121721598
-      UP_Walk_Characterl_2: -1138802622
+      Left_Walk_Zombie_9: 741241683
       Characterl_137: -1907139856
       Characterl_144: -694453575
-      Right_Walk_Characterl_4: 1385156210
+      Right_Walk_Zombie_3: -103836772
+      Down_Walk_Zombie_7: -281445259
       Characterl_42: 1481495124
       Characterl_151: 1859686844
       Characterl_11: -1998232934
       Characterl_140: -7472840
+      UP_Walk_Zombie_1: 163354723
       Characterl_25: -928412765
       Characterl_55: 1316999300
       Characterl_150: 1759059011
-      Right_Walk_Characterl_8: -278689768
       Top_Atack_Characterl_1: -1266591437
       Characterl_7: -1554575284
       Characterl_170: -905156661
-      Left_Walk_Characterl_7: 107853763
       Top_Atack_Characterl_6: -1948351851
       Left_Atack_Characterl_6: 204010833
       Characterl_52: -1513472857
       Characterl_29: 1389137922
-      Right_Walk_Characterl_1: -1728937912
+      Right_Walk_Zombie_7: -461009305
       Characterl_143: -454220416
       Left_Atack_Characterl_4: 1585552125
       Characterl_53: -1663299268
-      Down_Walk_Characterl_9: 791918795
+      Left_Walk_Zombie_2: -409263881
       Characterl_164: -1613701982
-      Left_Walk_Characterl_4: -368289429
+      UP_Walk_Zombie_5: 1751384712
       Left_Atack_Characterl_1: 895851561
       Characterl_39: -133718799
       Characterl_128: -595042989
-      Right_Walk_Characterl_7: -461009305
-      Right_Walk_Characterl_9: 715100789
+      Left_Walk_Zombie_4: -368289429
       Characterl_161: -412859156
       Characterl_2: 1637394239
       Right_Atack_Characterl_1: -736444406
-      Down_Walk_Characterl_4: -1375850375
       Right_Atack_Characterl_3: -635545164
-      Right_Walk_Characterl_5: -1740360958
+      Left_Walk_Zombie_6: 1391631940
       Characterl_31: 2144274674
+      Down_Walk_Zombie_4: -1375850375
       Characterl_9: -329678001
       Down_Atack_Characterl_4: -29478759
       Characterl_33: -349966602
