@@ -84,13 +84,13 @@ public class PlayerController : CharacterController
         }
         else
         {
-            moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            moveInput = new Vector2(SimpleInput.GetAxis("Horizontal"), SimpleInput.GetAxis("Vertical"));
         }
     }
 
     private void CheckToAttack()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (SimpleInput.GetButtonDown("Space"))
         {
             attackCooldownLeft = attackCooldown;
             hasAttacked = false;

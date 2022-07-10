@@ -13,6 +13,7 @@ public class ScoreSystem : MonoBehaviour
     public TMP_Text currentScoreText;
     public TMP_Text highScoreText;
     public GameObject gameOverPanel;
+    public GameObject mobileUI;
 
     private float currentScore;
     private SoundManager soundManager;
@@ -20,7 +21,11 @@ public class ScoreSystem : MonoBehaviour
     private void Start()
     {
         soundManager = GameObject.FindObjectOfType<SoundManager>();
-        soundManager.playMusic(soundManager.gameMusic);
+
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            mobileUI.SetActive(false);
+        }
     }
 
     void Update()

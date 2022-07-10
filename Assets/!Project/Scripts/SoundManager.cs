@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -17,7 +18,14 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        playMusic(menuMusic);
+        if (SceneManager.GetActiveScene().name == "Game")
+        {
+            playMusic(gameMusic);
+        }
+        else
+        {
+            playMusic(menuMusic);
+        }
     }
 
     public void playMusic(AudioClip music)
