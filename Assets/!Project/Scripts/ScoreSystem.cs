@@ -15,6 +15,13 @@ public class ScoreSystem : MonoBehaviour
     public GameObject gameOverPanel;
 
     private float currentScore;
+    private SoundManager soundManager;
+
+    private void Start()
+    {
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
+        soundManager.playMusic(soundManager.gameMusic);
+    }
 
     void Update()
     {
@@ -30,6 +37,7 @@ public class ScoreSystem : MonoBehaviour
     public void ZombieKilled()
     {
         currentScore += scorePerZombie;
+        soundManager.playSoundEffect(soundManager.zombieCagedSound);
         UpdateScoreText();
     }
 
@@ -52,5 +60,7 @@ public class ScoreSystem : MonoBehaviour
         highScoreText.text = "High Score: " + highScore;
 
         gameOverPanel.SetActive(true);
+
+        soundManager.playMusic(soundManager.gameOverMusic);
     }
 }

@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour
 {
     public TMP_Text soundText;
     public TMP_Text highscoreText;
+    private SoundManager soundManager;
 
     private void Start()
     {
@@ -20,6 +21,8 @@ public class MenuScript : MonoBehaviour
         {
             highscoreText.text = "Highscore " + PlayerPrefs.GetInt("Highscore").ToString();
         }
+
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
     }
 
     public void StartGame()
@@ -40,6 +43,15 @@ public class MenuScript : MonoBehaviour
     public void ToggleSound()
     {
         PlayerPrefs.SetInt("Sound", PlayerPrefs.GetInt("Sound") == 1? 0 : 1);
+
+        if (PlayerPrefs.GetInt("Sound") == 1)
+        {
+            soundManager.playMusic(soundManager.menuMusic);
+        }
+        else
+        {
+            soundManager.musicSource.Stop();
+        }
 
         SetSoundText();
     }

@@ -17,6 +17,7 @@ public class PlayerController : CharacterController
     public float attackTimer;
     private float attackCooldownLeft = 0;
     private bool hasAttacked;
+    private SoundManager soundManager;
 
     public float knockback;
     public GameObject chainlinkPrefab;
@@ -25,6 +26,7 @@ public class PlayerController : CharacterController
     private void Start()
     {
         scoreSystem = GameObject.FindObjectOfType<ScoreSystem>();
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
         scoreSystem.hpText.text = maxHP + " HP";
         hp = maxHP;
 
@@ -130,6 +132,7 @@ public class PlayerController : CharacterController
                 Vector2 direction = (rigidbody.position - collision.rigidbody.position).normalized;
                 rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
                 Hit();
+                soundManager.playSoundEffect(soundManager.zombieHurtSound);
 
                 if (hp <= 0)
                 {

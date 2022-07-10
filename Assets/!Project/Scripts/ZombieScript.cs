@@ -22,21 +22,30 @@ public class ZombieScript : CharacterController
     [Range(0, 1)]
     public float secondSlow;
 
+    [Header("Yell Frequency")]
+    public float minYellPeriod;
+    public float maxYellPeriod;
+
     private float maxFullSpeed;
     private float stunTime;
     private float effectTime;
     private float angle = 0;
     private ZombieState state;
     private Rigidbody2D target;
+    private SoundManager soundManager;
+    private float yellTimer;
 
     private void Start()
     {
         target = GameObject.FindObjectOfType<PlayerController>().rigidbody;
+        soundManager = GameObject.FindObjectOfType<SoundManager>();
         maxFullSpeed = maxSpeed;
+        yellTimer = Random.Range(minYellPeriod, maxYellPeriod);
     }
 
     void Update()
     {
+        // Timeout Effects
         if (effectTime >= 0)
         {
             effectTime -= Time.deltaTime;
@@ -59,6 +68,7 @@ public class ZombieScript : CharacterController
             }
         }
 
+        // Stun timeout
         if (stunTime <= 0)
         {
             moveInput = (this.target.position - rigidbody.position).normalized;
@@ -71,11 +81,26 @@ public class ZombieScript : CharacterController
             animator.SetBool("Stun", true);
         }
 
+
         // Switch to roam
         if (Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
         {
             angle += Random.Range(-1f, 1f) * roamRotation;
             moveInput = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
+        }
+        else
+        {
+            // Yell logic
+            if (stunTime <= 0)
+            {
+                yellTimer -= Time.deltaTime;
+
+                if (yellTimer <= 0)
+                {
+                    yellTimer = Random.Range(minYellPeriod, maxYellPeriod);
+                    soundManager.playSoundEffect(soundManager.zombieYellSound);
+                }
+            }
         }
 
         ApplyInput();
@@ -84,6 +109,7 @@ public class ZombieScript : CharacterController
     public void Hit(Vector2 direction)
     {
         base.Hit();
+        soundManager.playSoundEffect(soundManager.zombieHurtSound);
 
         if (state == ZombieState.NORMAL)
         {

@@ -4987,3 +4987,5 @@ MonoBehaviour:
   secondStun: 5
   secondEffectTime: 10
   secondSlow: 0.1
+  minYellPeriod: 2
+  maxYellPeriod: 5
