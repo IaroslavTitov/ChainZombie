@@ -18,6 +18,7 @@ public class ZombieSpawner : MonoBehaviour
     public float spawnRateDecay;
     public float minimumSpawnRate;
     public float spawnSprayRadius;
+    public float chainBreakForce;
 
     [Header("Zombie Numbers Settings")]
     public int minZombies;
@@ -69,7 +70,7 @@ public class ZombieSpawner : MonoBehaviour
 
                 chainDirections.Add(new Tuple<int ,int>(startIndex, endIndex));
 
-                ChainGenerator.GenerateChain(chainlinkPrefab, spawnedZombies[startIndex], spawnedZombies[endIndex], ChainGenerator.characterOffset, ChainGenerator.characterOffset);
+                ChainGenerator.GenerateChain(chainlinkPrefab, spawnedZombies[startIndex], spawnedZombies[endIndex], ChainGenerator.characterOffset, ChainGenerator.characterOffset, chainBreakForce);
             }
         }
     }

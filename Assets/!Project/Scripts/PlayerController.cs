@@ -6,22 +6,34 @@ using UnityEngine;
 
 public class PlayerController : CharacterController
 {
+    [Header("Attack Logic")]
     public GameObject attackConeWrapper;
     public Collider2D attackCone;
-
-    public int maxHP;
-    private int hp;
-    private ScoreSystem scoreSystem;
-
     public float attackCooldown;
     public float attackTimer;
-    private float attackCooldownLeft = 0;
-    private bool hasAttacked;
-    private SoundManager soundManager;
 
+    [Header("Health Logic")]
+    public int maxHP;
     public float knockback;
+
+    [Header("Object Links")]
     public GameObject chainlinkPrefab;
     public Rigidbody2D zombieBuddy;
+    public GameObject[] spawnPoints;
+    public float zombieBuddyDistance;
+
+    private int hp;
+    private float attackCooldownLeft = 0;
+    private bool hasAttacked;
+    private ScoreSystem scoreSystem;
+    private SoundManager soundManager;
+    private bool chainGenerated;
+
+    private void Awake()
+    {
+        transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+        zombieBuddy.transform.position = transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * zombieBuddyDistance;
+    }
 
     private void Start()
     {
@@ -29,12 +41,16 @@ public class PlayerController : CharacterController
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         scoreSystem.hpText.text = maxHP + " HP";
         hp = maxHP;
-
-        ChainGenerator.GenerateChain(chainlinkPrefab, rigidbody, zombieBuddy, Vector2.up * 0.5f, Vector2.up * 0.5f);
     }
 
     void Update()
     {
+        if (!chainGenerated)
+        {
+            chainGenerated = true;
+            ChainGenerator.GenerateChain(chainlinkPrefab, rigidbody, zombieBuddy, Vector2.up * 0.5f, Vector2.up * 0.5f, float.PositiveInfinity);
+        }
+
         if (hp > 0)
         {
             GatherInput();

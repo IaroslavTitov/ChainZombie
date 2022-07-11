@@ -6,7 +6,7 @@ public class ChainGenerator : MonoBehaviour
 {
     public static Vector2 characterOffset = Vector2.up * 0.5f;
 
-    public static void GenerateChain(GameObject chainlinkPrefab, Rigidbody2D startObject, Rigidbody2D endObject, Vector2 firstConnectorOffset, Vector2 lastConnectorOffset)
+    public static void GenerateChain(GameObject chainlinkPrefab, Rigidbody2D startObject, Rigidbody2D endObject, Vector2 firstConnectorOffset, Vector2 lastConnectorOffset, float breakForce)
     {
         GameObject parentObject = new GameObject();
         parentObject.name = "Chain";
@@ -23,10 +23,12 @@ public class ChainGenerator : MonoBehaviour
             newLink.GetComponent<HingeJoint2D>().connectedBody = currentConnector;
             currentConnector = newLink.GetComponent<Rigidbody2D>();
             firstConnectorOffset = Vector2.zero;
+            newLink.GetComponent<HingeJoint2D>().breakForce = breakForce;
         }
 
         HingeJoint2D joint = endObject.gameObject.AddComponent<HingeJoint2D>();
         joint.connectedBody = currentConnector;
         joint.anchor = lastConnectorOffset;
+        joint.breakForce = breakForce;
     }
 }
