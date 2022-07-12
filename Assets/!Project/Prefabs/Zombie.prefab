@@ -4989,3 +4989,5 @@ MonoBehaviour:
   secondSlow: 0.1
   minYellPeriod: 2
   maxYellPeriod: 5
+  pointNotification: {fileID: 2843114731450192237, guid: 4ced1610138845346b415c648b333bc0, type: 3}
+  pointsPerHit: 10

@@ -26,6 +26,10 @@ public class ZombieScript : CharacterController
     public float minYellPeriod;
     public float maxYellPeriod;
 
+    [Header("Score")]
+    public GameObject pointNotification;
+    public int pointsPerHit;
+
     private float maxFullSpeed;
     private float stunTime;
     private float effectTime;
@@ -135,6 +139,8 @@ public class ZombieScript : CharacterController
             maxSpeed = maxFullSpeed * secondSlow;
             state = ZombieState.STUNNED;
         }
+
+        PointNotificationScript.SpawnNotification(pointNotification, transform.position, pointsPerHit);
     }
 
     public enum ZombieState
