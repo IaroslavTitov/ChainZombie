@@ -1,10 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
+    [Header("Normal Sounds")]
     public AudioClip[] zombieHurtSound;
     public AudioClip[] zombieYellSound;
     public AudioClip[] playerHurtSound;
@@ -14,10 +14,21 @@ public class SoundManager : MonoBehaviour
     public AudioClip gameMusic;
     public AudioClip gameOverMusic;
 
+    [Header("Right Sounds")]
+    public AudioClip[] gachizombieHurtSound;
+    public AudioClip[] gachizombieYellSound;
+    public AudioClip[] gachiplayerHurtSound;
+    public AudioClip gachizombieCagedSound;
+
+    public AudioClip gachimenuMusic;
+    public AudioClip gachigameMusic;
+    public AudioClip gachigameOverMusic;
+
     public AudioSource musicSource;
 
     private void Start()
     {
+        SetGachi();
         if (SceneManager.GetActiveScene().name == "Game")
         {
             playMusic(gameMusic);
@@ -30,7 +41,7 @@ public class SoundManager : MonoBehaviour
 
     public void playMusic(AudioClip music)
     {
-        if (PlayerPrefs.GetInt("Sound") != 1)
+        if (PlayerPrefs.GetInt("Sound") != 0)
         {
             return;
         }
@@ -46,7 +57,7 @@ public class SoundManager : MonoBehaviour
 
     public void playSoundEffect(AudioClip effect)
     {
-        if (PlayerPrefs.GetInt("Sound") != 1)
+        if (PlayerPrefs.GetInt("Sound") != 0)
         {
             return;
         }
@@ -62,5 +73,19 @@ public class SoundManager : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         Destroy(source);
+    }
+
+    public void SetGachi()
+    {
+        if (PlayerPrefs.GetInt("RightVersion") == 1)
+        {
+            zombieHurtSound = gachizombieHurtSound;
+            zombieYellSound = gachizombieYellSound;
+            playerHurtSound = gachizombieHurtSound;
+            zombieCagedSound = gachizombieCagedSound;
+            menuMusic = gachimenuMusic;
+            gameMusic = gachigameMusic;
+            gameOverMusic = gachigameOverMusic;
+        }
     }
 }

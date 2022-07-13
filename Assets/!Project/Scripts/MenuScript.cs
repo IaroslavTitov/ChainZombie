@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public TMP_Text soundText;
+    public TMP_Text rightVersionText;
     public TMP_Text highscoreText;
     private SoundManager soundManager;
 
@@ -15,6 +16,11 @@ public class MenuScript : MonoBehaviour
         if (soundText != null)
         {
             SetSoundText();
+        }
+
+        if (rightVersionText != null)
+        {
+            SetRightVersionText();
         }
 
         if (highscoreText != null)
@@ -44,7 +50,7 @@ public class MenuScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("Sound", PlayerPrefs.GetInt("Sound") == 1? 0 : 1);
 
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("Sound") == 0)
         {
             soundManager.playMusic(soundManager.menuMusic);
         }
@@ -58,6 +64,28 @@ public class MenuScript : MonoBehaviour
 
     private void SetSoundText()
     {
-        soundText.text = PlayerPrefs.GetInt("Sound") == 1 ? "♪" : "X♪";
+        soundText.text = PlayerPrefs.GetInt("Sound") == 0 ? "♪" : "X♪";
+    }
+
+    public void ToggleRightVersion()
+    {
+        PlayerPrefs.SetInt("RightVersion", PlayerPrefs.GetInt("RightVersion") == 1 ? 0 : 1);
+
+        if (PlayerPrefs.GetInt("RightVersion") == 1)
+        {
+            soundManager.SetGachi();
+            soundManager.playMusic(soundManager.menuMusic);
+        }
+        else
+        {
+            soundManager.musicSource.Stop();
+        }
+
+        SetRightVersionText();
+    }
+
+    private void SetRightVersionText()
+    {
+        rightVersionText.text = PlayerPrefs.GetInt("RightVersion") == 1 ? "♂" : "X♂";
     }
 }
