@@ -148,7 +148,7 @@ public class PlayerController : CharacterController
                 Vector2 direction = (rigidbody.position - collision.rigidbody.position).normalized;
                 rigidbody.AddForce(direction * knockback, ForceMode2D.Impulse);
                 Hit();
-                soundManager.playSoundEffect(soundManager.zombieHurtSound);
+                soundManager.playSoundEffect(soundManager.playerHurtSound);
 
                 if (hp <= 0)
                 {

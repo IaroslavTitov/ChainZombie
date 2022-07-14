@@ -81,7 +81,7 @@ public class SoundManager : MonoBehaviour
         {
             zombieHurtSound = gachizombieHurtSound;
             zombieYellSound = gachizombieYellSound;
-            playerHurtSound = gachizombieHurtSound;
+            playerHurtSound = gachiplayerHurtSound;
             zombieCagedSound = gachizombieCagedSound;
             menuMusic = gachimenuMusic;
             gameMusic = gachigameMusic;
