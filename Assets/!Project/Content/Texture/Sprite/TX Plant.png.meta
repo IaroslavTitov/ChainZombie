@@ -153,9 +153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 360
+        y: 359
         width: 97
-        height: 136
+        height: 137
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,7 +217,7 @@ TextureImporter:
         serializedVersion: 2
         x: 97
         y: 292
-        width: 27
+        width: 28
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -236,9 +236,9 @@ TextureImporter:
       name: TX Plant_5
       rect:
         serializedVersion: 2
-        x: 157
+        x: 156
         y: 290
-        width: 38
+        width: 39
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -257,9 +257,9 @@ TextureImporter:
       name: TX Plant_6
       rect:
         serializedVersion: 2
-        x: 217
+        x: 216
         y: 285
-        width: 47
+        width: 48
         height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
