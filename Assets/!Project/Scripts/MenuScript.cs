@@ -64,7 +64,7 @@ public class MenuScript : MonoBehaviour
 
     private void SetSoundText()
     {
-        soundText.text = PlayerPrefs.GetInt("Sound") == 0 ? "♪" : "X♪";
+        soundText.text = PlayerPrefs.GetInt("Sound") == 0 ? "on" : "off";
     }
 
     public void ToggleRightVersion()
@@ -86,6 +86,6 @@ public class MenuScript : MonoBehaviour
 
     private void SetRightVersionText()
     {
-        rightVersionText.text = PlayerPrefs.GetInt("RightVersion") == 1 ? "♂" : "X♂";
+        rightVersionText.text = PlayerPrefs.GetInt("RightVersion") == 1 ? "on" : "off";
     }
 }

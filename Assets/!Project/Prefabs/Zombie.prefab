@@ -4826,6 +4826,7 @@ GameObject:
   - component: {fileID: 1239123529657259346}
   - component: {fileID: 2181289156668906677}
   - component: {fileID: 8562489075726672252}
+  - component: {fileID: -1996909267076345050}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Untagged
@@ -4991,3 +4992,32 @@ MonoBehaviour:
   maxYellPeriod: 5
   pointNotification: {fileID: 2843114731450192237, guid: 4ced1610138845346b415c648b333bc0, type: 3}
   pointsPerHit: 10
+--- !u!114 &-1996909267076345050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662579714583200470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.272933, y: 0.26620913, z: 0}
+  - {x: -0.14984798, y: 0.3540821, z: 0}
+  - {x: 0.17847347, y: 0.3540821, z: 0}
+  - {x: 0.32869148, y: 0.17413616, z: 0}
+  - {x: 0.22427177, y: 0.15171051, z: 0}
+  - {x: -0.2266264, y: 0.15409899, z: 0}
+  m_ShapePathHash: 1764861437
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 40144
