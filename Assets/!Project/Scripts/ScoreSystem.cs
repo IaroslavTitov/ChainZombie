@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
-    public float scorePerSecond;
-    public float scorePerZombie;
+    public int scorePerSecond;
+    public int scorePerCaged;
+    public int scorePerHit;
 
     public TMP_Text hpText;
     public TMP_Text gameScoreText;
@@ -39,10 +40,14 @@ public class ScoreSystem : MonoBehaviour
         gameScoreText.text = "Score: " + (int) currentScore;
     }
 
-    public void ZombieKilled()
+    public void ZombieHit()
     {
-        currentScore += scorePerZombie;
-        soundManager.playSoundEffect(soundManager.zombieCagedSound);
+        currentScore += scorePerHit;
+        UpdateScoreText();
+    }
+    public void ZombieCaged()
+    {
+        currentScore += scorePerCaged;
         UpdateScoreText();
     }
 
@@ -52,7 +57,6 @@ public class ScoreSystem : MonoBehaviour
         spawner.gameObject.SetActive(false);
 
         scorePerSecond = 0;
-        scorePerZombie = 0;
 
         int highScore = PlayerPrefs.GetInt("Highscore");
         if (highScore < currentScore)

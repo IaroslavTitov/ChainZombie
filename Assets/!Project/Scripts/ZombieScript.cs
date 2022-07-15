@@ -28,7 +28,6 @@ public class ZombieScript : CharacterController
 
     [Header("Score")]
     public GameObject pointNotification;
-    public int pointsPerHit;
 
     private float maxFullSpeed;
     private float stunTime;
@@ -38,10 +37,11 @@ public class ZombieScript : CharacterController
     private Rigidbody2D target;
     private SoundManager soundManager;
     private float yellTimer;
-
+    private ScoreSystem scoreSystem;
     private void Start()
     {
         target = GameObject.FindObjectOfType<PlayerController>().rigidbody;
+        scoreSystem = GameObject.FindObjectOfType<ScoreSystem>();
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         maxFullSpeed = maxSpeed;
         yellTimer = Random.Range(minYellPeriod, maxYellPeriod);
@@ -140,7 +140,8 @@ public class ZombieScript : CharacterController
             state = ZombieState.STUNNED;
         }
 
-        PointNotificationScript.SpawnNotification(pointNotification, transform.position, pointsPerHit);
+        scoreSystem.ZombieHit();
+        PointNotificationScript.SpawnNotification(pointNotification, transform.position, scoreSystem.scorePerHit);
     }
 
     public enum ZombieState
