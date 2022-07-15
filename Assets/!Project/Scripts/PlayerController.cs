@@ -32,7 +32,7 @@ public class PlayerController : CharacterController
     private void Awake()
     {
         transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
-        zombieBuddy.transform.position = transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * zombieBuddyDistance;
+        zombieBuddy.transform.position = transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * zombieBuddyDistance;
     }
 
     private void Start()
