@@ -77,6 +77,10 @@ public class ZombieScript : CharacterController
         {
             moveInput = (this.target.position - rigidbody.position).normalized;
             animator.SetBool("Stun", false);
+            if (gameObject.layer == LayerMask.NameToLayer("StunnedZombie"))
+            {
+                gameObject.layer = LayerMask.NameToLayer("Enemies");
+            }
         }
         else
         {
@@ -118,6 +122,7 @@ public class ZombieScript : CharacterController
         if (state == ZombieState.NORMAL)
         {
             stunTime = firstStun;
+            gameObject.layer = LayerMask.NameToLayer("StunnedZombie");
             effectTime = firstEffectTime;
             rigidbody.AddForce(direction * firstKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * firstSlow;
@@ -126,6 +131,7 @@ public class ZombieScript : CharacterController
         else if (state == ZombieState.SLOW)
         {
             stunTime = secondStun;
+            gameObject.layer = LayerMask.NameToLayer("StunnedZombie");
             effectTime = secondEffectTime;
             rigidbody.AddForce(direction * secondKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * secondSlow;
@@ -134,6 +140,7 @@ public class ZombieScript : CharacterController
         else if (state == ZombieState.STUNNED)
         {
             stunTime = secondStun;
+            gameObject.layer = LayerMask.NameToLayer("StunnedZombie");
             effectTime = secondEffectTime;
             rigidbody.AddForce(direction * secondKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * secondSlow;

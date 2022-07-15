@@ -126,7 +126,7 @@ public class PlayerController : CharacterController
             List<Collider2D> results = new List<Collider2D>();
             if (attackCone.OverlapCollider(new ContactFilter2D(), results) > 0)
             {
-                var enemies = results.Where(x => x.gameObject.layer == LayerMask.NameToLayer("Enemies"));
+                var enemies = results.Where(x => x.gameObject.layer == LayerMask.NameToLayer("Enemies") || x.gameObject.layer == LayerMask.NameToLayer("StunnedZombie"));
                 foreach (var collider in enemies)
                 {
                     ZombieScript zombie = collider.GetComponent<ZombieScript>();
