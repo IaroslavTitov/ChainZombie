@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
+    [Header("Scores")]
     public int scorePerSecond;
     public int scorePerCaged;
     public int scorePerHit;
 
+    [Header("Links")]
     public TMP_Text hpText;
     public TMP_Text gameScoreText;
     public TMP_Text currentScoreText;
@@ -18,7 +20,6 @@ public class ScoreSystem : MonoBehaviour
 
     private float currentScore;
     private SoundManager soundManager;
-
     private void Start()
     {
         soundManager = GameObject.FindObjectOfType<SoundManager>();
@@ -53,11 +54,14 @@ public class ScoreSystem : MonoBehaviour
 
     public void GameOver()
     {
+        // Stop spawning zombies
         ZombieSpawner spawner = GameObject.FindObjectOfType<ZombieSpawner>();
         spawner.gameObject.SetActive(false);
 
+        // Stop earning score
         scorePerSecond = 0;
 
+        // Save highscore
         int highScore = PlayerPrefs.GetInt("Highscore");
         if (highScore < currentScore)
         {
@@ -65,9 +69,9 @@ public class ScoreSystem : MonoBehaviour
             highScore = (int) currentScore;
         }
 
+        // Show Game Over panel
         currentScoreText.text = "Current Score: " + (int) currentScore;
         highScoreText.text = "High Score: " + highScore;
-
         gameOverPanel.SetActive(true);
 
         soundManager.playMusic(soundManager.gameOverMusic);

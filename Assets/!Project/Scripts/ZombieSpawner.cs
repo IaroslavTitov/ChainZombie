@@ -44,11 +44,13 @@ public class ZombieSpawner : MonoBehaviour
         {
             timer += spawnRate;
 
+            // Decide what are we spawning
             int zombieNumber = Random.Range(minZombies, maxZombies+1);
             int chainNumber = Mathf.Min(zombieNumber-1, Random.Range(minChains, maxChains+1));
             List<Vector3> avaliablePositions = spawnPoints.Where(x => Vector2.Distance(x.position, player.position) > minimumDistance).Select(x => x.position).ToList();
             Vector2 basePosition = avaliablePositions[Random.Range(0, avaliablePositions.Count)];
 
+            // Spawn all zombies
             List<Rigidbody2D> spawnedZombies = new List<Rigidbody2D>();
             for (int i = 0; i < zombieNumber; i++)
             {
@@ -56,6 +58,7 @@ public class ZombieSpawner : MonoBehaviour
                 spawnedZombies.Add(Instantiate(zombiePrefab, spawnPosition, Quaternion.identity).GetComponent<Rigidbody2D>());
             }
 
+            // Spawn all chains
             List<Tuple<int, int>> chainDirections = new List<Tuple<int, int>>();
             for (int i = 0; i < chainNumber; i++)
             {

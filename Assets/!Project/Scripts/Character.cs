@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    [Header("Character Base System")]
     public new Rigidbody2D rigidbody;
     public Animator animator;
     public float acceleration;

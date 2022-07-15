@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChainGenerator : MonoBehaviour
@@ -11,11 +9,13 @@ public class ChainGenerator : MonoBehaviour
         GameObject parentObject = new GameObject();
         parentObject.name = "Chain";
 
+        // Calculate direction
         Rigidbody2D currentConnector = startObject;
         Vector2 displacement = (startObject.position + firstConnectorOffset) - (endObject.position + lastConnectorOffset);
         float angle = Mathf.Atan2(displacement.y, displacement.x);
         float linkLength = .5f;
         
+        // Spawn links
         while (displacement.magnitude > linkLength)
         {
             GameObject newLink = Instantiate(chainlinkPrefab, currentConnector.position + firstConnectorOffset - displacement.normalized * linkLength, Quaternion.Euler(0, 0, angle * Mathf.Rad2Deg - 90), parentObject.transform);
@@ -26,6 +26,7 @@ public class ChainGenerator : MonoBehaviour
             newLink.GetComponent<HingeJoint2D>().breakForce = breakForce;
         }
 
+        // Add last link
         HingeJoint2D joint = endObject.gameObject.AddComponent<HingeJoint2D>();
         joint.connectedBody = currentConnector;
         joint.anchor = lastConnectorOffset;

@@ -118,6 +118,8 @@ public class ZombieScript : CharacterController
     {
         base.Hit();
         soundManager.playSoundEffect(soundManager.zombieHurtSound);
+        scoreSystem.ZombieHit();
+        PointNotificationScript.SpawnNotification(pointNotification, transform.position, scoreSystem.scorePerHit);
 
         if (state == ZombieState.NORMAL)
         {
@@ -146,9 +148,6 @@ public class ZombieScript : CharacterController
             maxSpeed = maxFullSpeed * secondSlow;
             state = ZombieState.STUNNED;
         }
-
-        scoreSystem.ZombieHit();
-        PointNotificationScript.SpawnNotification(pointNotification, transform.position, scoreSystem.scorePerHit);
     }
 
     public enum ZombieState

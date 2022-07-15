@@ -9,8 +9,8 @@ public class MenuScript : MonoBehaviour
     public TMP_Text soundText;
     public TMP_Text rightVersionText;
     public TMP_Text highscoreText;
-    private SoundManager soundManager;
 
+    private SoundManager soundManager;
     private void Start()
     {
         if (soundText != null)
@@ -71,15 +71,8 @@ public class MenuScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("RightVersion", PlayerPrefs.GetInt("RightVersion") == 1 ? 0 : 1);
 
-        if (PlayerPrefs.GetInt("RightVersion") == 1)
-        {
-            soundManager.SetGachi();
-            soundManager.playMusic(soundManager.menuMusic);
-        }
-        else
-        {
-            soundManager.musicSource.Stop();
-        }
+        soundManager.SetGachi();
+        soundManager.playMusic(soundManager.menuMusic);
 
         SetRightVersionText();
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class SoundManager : MonoBehaviour
 {
     [Header("Normal Sounds")]
-    public AudioClip[] zombieHurtSound;
-    public AudioClip[] zombieYellSound;
-    public AudioClip[] playerHurtSound;
-    public AudioClip zombieCagedSound;
+    public AudioClip[] normalZombieHurtSound;
+    public AudioClip[] normalZombieYellSound;
+    public AudioClip[] normalPlayerHurtSound;
+    public AudioClip normalZombieCagedSound;
 
-    public AudioClip menuMusic;
-    public AudioClip gameMusic;
-    public AudioClip gameOverMusic;
+    public AudioClip normalMenuMusic;
+    public AudioClip normalGameMusic;
+    public AudioClip normalGameOverMusic;
 
     [Header("Right Sounds")]
     public AudioClip[] gachizombieHurtSound;
@@ -26,6 +27,21 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource musicSource;
 
+    [NonSerialized]
+    public AudioClip[] zombieHurtSound;
+    [NonSerialized]
+    public AudioClip[] zombieYellSound;
+    [NonSerialized]
+    public AudioClip[] playerHurtSound;
+    [NonSerialized]
+    public AudioClip zombieCagedSound;
+
+    [NonSerialized]
+    public AudioClip menuMusic;
+    [NonSerialized]
+    public AudioClip gameMusic;
+    [NonSerialized]
+    public AudioClip gameOverMusic;
     private void Start()
     {
         SetGachi();
@@ -52,7 +68,7 @@ public class SoundManager : MonoBehaviour
 
     public void playSoundEffect(AudioClip[] effects)
     {
-        playSoundEffect(effects[Random.Range(0, effects.Length)]);
+        playSoundEffect(effects[UnityEngine.Random.Range(0, effects.Length)]);
     }
 
     public void playSoundEffect(AudioClip effect)
@@ -86,6 +102,16 @@ public class SoundManager : MonoBehaviour
             menuMusic = gachimenuMusic;
             gameMusic = gachigameMusic;
             gameOverMusic = gachigameOverMusic;
+        }
+        else
+        {
+            zombieHurtSound = normalZombieHurtSound;
+            zombieYellSound = normalZombieYellSound;
+            playerHurtSound = normalPlayerHurtSound;
+            zombieCagedSound = normalZombieCagedSound;
+            menuMusic = normalMenuMusic;
+            gameMusic = normalGameMusic;
+            gameOverMusic = normalGameOverMusic;
         }
     }
 }
