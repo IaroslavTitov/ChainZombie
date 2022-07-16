@@ -152,6 +152,7 @@ public class PlayerController : CharacterController
 
                 if (hp <= 0)
                 {
+                    animator.SetTrigger("Dead");
                     GameObject.FindObjectOfType<ScoreSystem>().GameOver();
                 }
             }
