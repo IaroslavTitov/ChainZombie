@@ -45,7 +45,7 @@ public class ZombieScript : CharacterController
     private ScoreSystem scoreSystem;
     private void Start()
     {
-        target = GameObject.FindObjectOfType<PlayerController>().rigidbody;
+        target = GameObject.FindObjectOfType<PlayerController>()?.rigidbody;
         scoreSystem = GameObject.FindObjectOfType<ScoreSystem>();
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         maxFullSpeed = maxSpeed;
