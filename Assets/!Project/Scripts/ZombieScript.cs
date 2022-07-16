@@ -90,7 +90,11 @@ public class ZombieScript : CharacterController
         // Stun timeout
         if (stunTime <= 0)
         {
-            moveInput = (this.target.position - rigidbody.position).normalized;
+            if (target != null)
+                moveInput = (this.target.position - rigidbody.position).normalized;
+            else
+                moveInput = Vector2.zero;
+
             animator.SetBool("Stun", false);
             if (gameObject.layer == LayerMask.NameToLayer("StunnedZombie"))
             {
@@ -106,7 +110,7 @@ public class ZombieScript : CharacterController
 
 
         // Switch to roam
-        if (Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
+        if (target != null && Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
         {
             angle += Random.Range(-1f, 1f) * roamRotation;
             moveInput = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
