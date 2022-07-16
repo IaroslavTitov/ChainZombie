@@ -5058,6 +5058,11 @@ MonoBehaviour:
   minYellPeriod: 2
   maxYellPeriod: 5
   pointNotification: {fileID: 2843114731450192237, guid: 4ced1610138845346b415c648b333bc0, type: 3}
+  normalAnimators:
+  - {fileID: 9100000, guid: 67456e8e1b231ce478893563cfe6800d, type: 2}
+  - {fileID: 9100000, guid: 4fd24f62a69653342994ca5ef2f15ba2, type: 2}
+  - {fileID: 9100000, guid: 5a560a9a7b42b024a9726e3c2bdaddfc, type: 2}
+  gachiAnimators: []
 --- !u!114 &-1996909267076345050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5086,4 +5091,4 @@ MonoBehaviour:
   - {x: -0.2266264, y: 0.15409899, z: 0}
   m_ShapePathHash: 1764861437
   m_Mesh: {fileID: 0}
-  m_InstanceId: 40144
+  m_InstanceId: 80762

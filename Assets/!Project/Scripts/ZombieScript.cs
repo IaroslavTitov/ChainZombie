@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class ZombieScript : CharacterController
@@ -29,6 +30,10 @@ public class ZombieScript : CharacterController
     [Header("Score")]
     public GameObject pointNotification;
 
+    [Header("Animators")]
+    public AnimatorController[] normalAnimators;
+    public AnimatorController[] gachiAnimators;
+
     private float maxFullSpeed;
     private float stunTime;
     private float effectTime;
@@ -45,6 +50,16 @@ public class ZombieScript : CharacterController
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         maxFullSpeed = maxSpeed;
         yellTimer = Random.Range(minYellPeriod, maxYellPeriod);
+        animator = GetComponent<Animator>();
+
+        if (PlayerPrefs.GetInt("RightVersion") == 0)
+        {
+            animator.runtimeAnimatorController = normalAnimators[Random.Range(0, normalAnimators.Length)];
+        }
+        else
+        {
+            animator.runtimeAnimatorController = gachiAnimators[Random.Range(0, gachiAnimators.Length)];
+        }
     }
 
     void Update()
