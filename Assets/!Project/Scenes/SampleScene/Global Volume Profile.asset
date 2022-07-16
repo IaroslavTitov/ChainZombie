@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
   m_Name: FilmGrain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   type:
     m_OverrideState: 1
     m_Value: 0
@@ -85,19 +85,19 @@ MonoBehaviour:
   active: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.89
+    m_Value: 0.93
   intensity:
     m_OverrideState: 1
     m_Value: 10
   scatter:
     m_OverrideState: 1
-    m_Value: 0.853
+    m_Value: 0.072
   clamp:
     m_OverrideState: 0
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.1792453, g: 0.06679424, b: 0.11148399, a: 1}
+    m_Value: {r: 0.21698111, g: 0.14021893, b: 0.1693356, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
     m_Value: 0.08
