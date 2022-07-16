@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ZombieScript : CharacterController
 {
@@ -31,8 +30,8 @@ public class ZombieScript : CharacterController
     public GameObject pointNotification;
 
     [Header("Animators")]
-    public AnimatorController[] normalAnimators;
-    public AnimatorController[] gachiAnimators;
+    public RuntimeAnimatorController[] normalAnimators;
+    public RuntimeAnimatorController[] gachiAnimators;
 
     private float maxFullSpeed;
     private float stunTime;
