@@ -52,14 +52,7 @@ public class ZombieScript : CharacterController
         yellTimer = Random.Range(minYellPeriod, maxYellPeriod);
         animator = GetComponent<Animator>();
 
-        if (PlayerPrefs.GetInt("RightVersion") == 0)
-        {
-            animator.runtimeAnimatorController = normalAnimators[Random.Range(0, normalAnimators.Length)];
-        }
-        else
-        {
-            animator.runtimeAnimatorController = gachiAnimators[Random.Range(0, gachiAnimators.Length)];
-        }
+        SetGachi();
     }
 
     void Update()
@@ -110,7 +103,7 @@ public class ZombieScript : CharacterController
 
 
         // Switch to roam
-        if (target != null && Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
+        if (target == null || Vector2.Distance(this.target.position, rigidbody.position) > sightDistance)
         {
             angle += Random.Range(-1f, 1f) * roamRotation;
             moveInput = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
@@ -166,6 +159,18 @@ public class ZombieScript : CharacterController
             rigidbody.AddForce(direction * secondKnockback, ForceMode2D.Impulse);
             maxSpeed = maxFullSpeed * secondSlow;
             state = ZombieState.STUNNED;
+        }
+    }
+
+    public void SetGachi()
+    {
+        if (PlayerPrefs.GetInt("RightVersion") == 0)
+        {
+            animator.runtimeAnimatorController = normalAnimators[Random.Range(0, normalAnimators.Length)];
+        }
+        else
+        {
+            animator.runtimeAnimatorController = gachiAnimators[Random.Range(0, gachiAnimators.Length)];
         }
     }
 

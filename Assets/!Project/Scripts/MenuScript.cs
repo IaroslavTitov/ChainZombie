@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -75,6 +76,7 @@ public class MenuScript : MonoBehaviour
         soundManager.playMusic(soundManager.menuMusic);
 
         SetRightVersionText();
+        FindObjectsOfType<ZombieScript>().ToList().ForEach(x => x.SetGachi());
     }
 
     private void SetRightVersionText()
