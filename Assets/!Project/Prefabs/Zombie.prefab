@@ -5045,7 +5045,7 @@ MonoBehaviour:
   minSpeed: 0.1
   friction: 5
   hurtParticles: {fileID: 6823503045802362542}
-  sightDistance: 20
+  sightDistance: 10
   roamRotation: 18
   firstKnockback: 47
   firstStun: 0.5
@@ -5094,4 +5094,4 @@ MonoBehaviour:
   - {x: -0.2266264, y: 0.15409899, z: 0}
   m_ShapePathHash: 1764861437
   m_Mesh: {fileID: 0}
-  m_InstanceId: 137594
+  m_InstanceId: 252752
